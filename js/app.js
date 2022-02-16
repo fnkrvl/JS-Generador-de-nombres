@@ -40,16 +40,16 @@ function cargarNombres(e) {
             // Generar el HTML
             let htmlNombres = '<h2>Nombres generados</h2>'
             
-            htmlNombres += '<ul class="lista">'
+            html += '<ul class="lista">'
 
             // Imprimir cada nombres
             nombres.forEach(function(nombre) {
-                htmlNombres += `<li>${nombre.name}`
+                html += `<li>${nombre.name}`
             });
 
-            htmlNombres += '</ul>'
+            html += '</ul>'
 
-            document.getElementById('resultado').innerHTML = htmlNombres
+            document.getElementById('#resultado').innerHTML = html
         }
     }
     xhr.send()
